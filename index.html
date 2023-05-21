@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Template - Loacalisation - MDB</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="assets/img/maps.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="assets/css/mdb.min.css" />
+
+    <!-- Customers Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  
+  </head>
+  <body id="body">
+
+    <header>
+      <!-- Image and text -->
+      <nav class="navbar navbar-light bg-light" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="fas fa-location-dot"><span class="invisible">...</span></i>
+            <small id="kembo">Kembo Maps</small>
+          </a>
+
+          <div class="d-flex align-items-end">       
+            <div class="container-fluid">
+              <i class="far fa-lg fa-sun text-white invisible" id="toggle-off" style="cursor: pointer;" title="Mode Jour"></i>
+              <i class="far fa-lg fa-moon" id="toggle-me" style="cursor: pointer;" title="Mode Nuit"></i>
+            </div>
+          </div>
+ 
+        </div>
+      </nav>
+
+    </header>
+
+    <main class="container-fluid">
+      <div class="container-sm">
+        <div class="ratio ratio-1x1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127297.67664875729!2d15.240342854168262!3d-4.4012992161250795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a3130fe066a8b%3A0x168b7e4e1f52378d!2sKinshasa!5e0!3m2!1sen!2scd!4v1684612461525!5m2!1sen!2scd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container-fluid" id="blocked">
+          <div class="row  d-flex justify-content-center">
+            <div class="col-9">
+              <div class="d-block p-2 text-white" style="top: 100px; position:relative;" id="conatiner-block">
+ 
+                <form action="">
+                  <div class="container">
+
+                    <div class="row mb-3">
+                      <div class="col-md">
+                        <div class="form-outline mb-3">
+                          <input type="text" id="typeText" class="form-control bg-light fs-5 text-center"/>
+                          <label class="form-label text-dark fs-5 text-center" for="typeText">Keyword</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md">
+                          <div class="form-control mb-3">
+                            <select class="select fs-5 text-center" style="width: 100%; border:none; outline:none;">
+                              <option value="Null">Location</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                              <option value="4">Four</option>
+                            </select>
+                          </div>
+                      </div>
+
+                      <div class="col-md">
+                        <div class="form-control mb-3">
+                          <select class="select fs-5 text-center" style="width: 100%; border:none; outline:none;">
+                            <option value="Null">Category</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                          </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md">
+                      <div class="form-outline mb-3">
+                        <input type="text" id="typeText" class="form-control bg-light fs-5 text-center"
+                        aria-label="disabled input example"
+                        disabled/>
+                        <label class="form-label text-dark fs-5 text-center" for="typeText">21/05/2023</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md">
+                      <button type="submit" class="btn " data-mdb-ripple-color="light"><i class="fas fa-2x fa-magnifying-glass"></i></button>
+                    </div>
+
+                  </div>
+
+                  <div class="row mb-2">
+
+                    <div class="col-md">
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                        <label class="form-check-label" for="inlineCheckbox1">Hotel</label>
+                      </div>
+                      
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                        <label class="form-check-label" for="inlineCheckbox2">Restaurant</label>
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                        <label class="form-check-label" for="inlineCheckbox2">Event</label>
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                        <label class="form-check-label" for="inlineCheckbox2">Station</label>
+                      </div>
+
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                        <label class="form-check-label" for="inlineCheckbox2">Store</label>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center bg-white text-lg-start text-muted" id="footer">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <i class="fas fa-location-dot"><span class="invisible">...</span></i>
+          <span>Kembo Maps</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"></i>Kembo Corporation
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Laravel</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://Kembocorporation.com/">KemboCorporation.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- MDB -->
+    <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
