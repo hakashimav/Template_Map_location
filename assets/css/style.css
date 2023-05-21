@@ -1,0 +1,30 @@
+#conatiner-block {
+    /* fallback for old browsers */
+    background: #05161a;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(5,22,26,0.7), rgba(7,46,51,0.7));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(5,22,26,0.7), rgba(7,46,51,0.7))
+}
+
+#blocked {
+    position: relative;
+    bottom: 250px;
+    
+}
+
+@media (min-width: 468px) {
+    #blocked {
+        position: relative;
+        bottom: 90px;
+    }
+}
+
+@media (min-width: 1358px) {
+    #blocked {
+        position: relative;
+        bottom: 250px;
+    }
+}
